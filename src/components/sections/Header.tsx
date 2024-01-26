@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 import { TypeAnimation } from "react-type-animation";
 
 const Header = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <>

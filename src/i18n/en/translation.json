@@ -4,8 +4,9 @@
     "titles": [
       "Full Stack Developer",
       "Crazy Hard Worker",
+      "Excellent Communicator",
       "Musician",
-      "Aspiring Cinephile"
+      "Cinephile"
     ],
     "socials": [
       {
@@ -53,9 +54,9 @@
         ]
       },
       {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
+        "title": "Swole",
+        "startDate": "2012",
+        "description": "My last project in school. I had always wanted a fitness tracker that has routines built in and also lets you add your own, so I built it.",
         "images": [
           "images/portfolio/photography/p1.jpg",
           "images/portfolio/photography/p2.jpg"
@@ -65,6 +66,10 @@
           {
             "class": "mdi:react",
             "name": "React"
+          },
+          {
+            "class": "mdi:ruby",
+            "name": "Ruby"
           },
           {
             "class": "teenyicons:javascript-outline",
