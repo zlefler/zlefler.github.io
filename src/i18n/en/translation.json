@@ -21,8 +21,8 @@
   },
   "about_me": {
     "title": "About me",
-    "greeting": "Hi.",
-    "content": "I'm Zach. I was a restaurant owner for a long time. Now I'm a coder, and an all around cool guy. Maybe you should hire me?",
+    "greeting": "Hi, I'm Zach.",
+    "content": "After a difficult and rewarding in the restaurant industry, I'm seeking a position where I can utilize my well-honed work ethic, determination, and effective communication skills. As a restaurant owner, I was responsible for a team ",
     "image": "myProfile.jpg",
     "tech_stacks": [
       "devicon:python",
@@ -55,11 +55,12 @@
       },
       {
         "title": "Swole",
-        "startDate": "2012",
-        "description": "My last project in school. I had always wanted a fitness tracker that has routines built in and also lets you add your own, so I built it.",
+        "startDate": "2022",
+        "description": "A school project. I had always wanted an app that lets you use classic lifting routines and told you how much you needed to lift and when, but adapted when you weren't meeting your targets. It also lets you create your own routines.",
         "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
+          "images/portfolio/swole/p1.jpg",
+          "images/portfolio/swole/p2.jpg",
+          "images/portfolio/swole/p3.jpg"
         ],
         "url": "https://github.com",
         "technologies": [
@@ -129,6 +130,10 @@
       {
         "name": "GraphQL",
         "class": "teenyicons:graphql-solid"
+      },
+      {
+        "name": "AWS",
+        "class": "teenyicons:amazonwebservices-solid"
       }
     ]
   },
@@ -152,7 +157,7 @@
       {
         "company": "Flatiron School",
         "title": "Student",
-        "years": "05.2023 - 09.2023",
+        "years": "02.2023 - 10.2023",
         "mainTechIcon": "mdi:ruby",
         "technologies": [
           "HTML",
