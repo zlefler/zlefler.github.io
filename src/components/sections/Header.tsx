@@ -1,9 +1,14 @@
-import { useTranslation } from "react-i18next";
 import { Icon } from "@iconify/react";
 import { TypeAnimation } from "react-type-animation";
 
 const Header = () => {
-  const { t } = useTranslation();
+  const titles = [
+    "Full Stack Developer",
+    "Crazy Hard Worker",
+    "Excellent Communicator",
+    "Musician",
+    "Cinephile",
+  ];
 
   return (
     <>
@@ -21,13 +26,11 @@ const Header = () => {
           </div>
 
           <h1 className="text-4xl font-bold text-gray-dark dark:text-white">
-            {t("basic_info.name")}
+            Zach Lefler
           </h1>
 
           <TypeAnimation
-            sequence={t("basic_info.titles", { returnObjects: true }).flatMap(
-              (title: string) => [title, 1000],
-            )}
+            sequence={titles.flatMap((title: string) => [title, 1000])}
             wrapper="span"
             speed={50}
             className="text-regular text-2xl text-gray-dark dark:text-white"

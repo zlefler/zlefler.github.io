@@ -1,28 +1,83 @@
 import { useBoolean } from "@/hooks";
 import ProjectDialog from "../dialog/ProjectDialog";
-import { useTranslation } from "react-i18next";
 import { useState } from "react";
-import { ProjectType } from "@/i18n/config";
 
 const Projects = () => {
   const [isOpen, setIsOpen] = useBoolean();
-  const [selectedProject, setSelectedProject] = useState<
-    ProjectType | undefined
-  >();
-  const { t } = useTranslation();
+  const [selectedProject, setSelectedProject] = useState<undefined | Project>();
 
-  const handleProjectDetails = (project: ProjectType) => {
+  type Project = {
+    description: string;
+    images: string[];
+    startDate: string;
+    technologies: { class: string; name: string }[];
+    title: string;
+    url: string;
+  };
+
+  const handleProjectDetails = (project: Project) => {
     setSelectedProject(project);
+    console.log(project);
     setIsOpen.on();
   };
+
+  const projects = [
+    {
+      title: "Movie Rankings",
+      startDate: "2023",
+      description:
+        "I went to a movie quiz that had a few questions like this, and I wanted to play some more, so I made this. Rank movies in order of their box office ranking or their Rotten Tomatoes score.",
+      images: [
+        "images/portfolio/movie-rankings/movie1.jpg",
+        "images/portfolio/movie-rankings/movie2.jpg",
+      ],
+      url: "https://github.com",
+      technologies: [
+        {
+          class: "mdi:react",
+          name: "React",
+        },
+        {
+          class: "teenyicons:typescript-outline",
+          name: "TypeScript",
+        },
+      ],
+    },
+    {
+      title: "Swole",
+      startDate: "2022",
+      description:
+        "A school project. I had always wanted an app that lets you use classic lifting routines and told you how much you needed to lift and when, but adapted when you weren't meeting your targets. It also lets you create your own routines.",
+      images: [
+        "images/portfolio/swole/workout1.jpg",
+        "images/portfolio/swole/workout2.jpg",
+        "images/portfolio/swole/workout3.jpg",
+      ],
+      url: "https://github.com",
+      technologies: [
+        {
+          class: "mdi:react",
+          name: "React",
+        },
+        {
+          class: "mdi:ruby",
+          name: "Ruby",
+        },
+        {
+          class: "teenyicons:javascript-outline",
+          name: "JavaScript",
+        },
+      ],
+    },
+  ];
 
   return (
     <section className="bg-blue px-3 py-5 dark:bg-[#494949] md:px-0 md:py-10">
       <h2 className="py-10 text-center text-xl font-medium uppercase tracking-widest text-black">
-        {t("projects.title")}
+        Projects
       </h2>
       <div className="flex flex-wrap justify-center gap-10">
-        {t("projects.projects", { returnObjects: true }).map((item) => (
+        {projects.map((item) => (
           <div
             className="mb-[30px] inline-block cursor-pointer rounded-sm bg-white p-3 text-center shadow-card transition duration-[0.2] ease-linear hover:scale-[1.01] hover:shadow-card-hover dark:bg-[#6d6d6d]"
             onClick={() => handleProjectDetails(item)}

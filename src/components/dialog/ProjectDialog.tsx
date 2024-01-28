@@ -2,12 +2,20 @@ import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { Icon } from "@iconify/react";
 import AwesomeSlider from "react-awesome-slider";
-import { ProjectType } from "@/i18n/config";
+
+type Project = {
+  description: string;
+  images: string[];
+  startDate: string;
+  technologies: { class: string; name: string }[];
+  title: string;
+  url: string;
+};
 
 interface Props {
   open: boolean;
   onClose: () => void;
-  project?: ProjectType;
+  project?: Project;
 }
 
 const ProjectDialog = ({ open, onClose, project }: Props) => {

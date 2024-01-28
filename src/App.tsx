@@ -1,4 +1,3 @@
-import "./i18n/config";
 import GithubLink from "./components/sections/GithubLink";
 import Header from "./components/sections/Header";
 import AboutMe from "./components/sections/AboutMe";
