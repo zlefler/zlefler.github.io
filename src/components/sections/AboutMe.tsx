@@ -50,21 +50,23 @@ const AboutMe = () => {
                 Hi, I'm Zach.
               </span>
               <br />
-              <br />
               <p className="text-sm font-medium dark:text-white">
-                My professional journey is unique, having transitioned from the
-                culinary arts to the tech industry. For many years, I led a
-                pop-up restaurant and later, a full-fledged brick-and-mortar
-                establishment. These experiences were instrumental in shaping
-                the professional I am today. <br />
+                From managing restaurants to software engineering, my career has
+                been about embracing new challenges and learning continuously.
+                In 2016, I started a pop-up restaurant. It won several awards
+                and had an opt-in mailing list of over 8k people. In 2019, I
+                opened a brick-and-mortar restaurant, and was in charge of daily
+                operations and over 20 employees. These experiences were
+                instrumental in shaping the professional I am today.
+                <br />
                 My work ethic, honed from long hours in the kitchen, translates
                 seamlessly into coding marathons and debugging sessions.
                 Managing a restaurant taught me how to prioritize tasks
                 dynamically and adapt to changing situations - skills that are
                 crucial in the ever-evolving world of software development. Most
                 importantly, my experience in hospitality has ingrained in me
-                the value of clear, friendly communication – whether it's with
-                customers, colleagues, or a block of code.
+                the value of clear, friendly, professional communication -
+                whether it's with customers, colleagues, or a block of code.
               </p>
             </div>
           </div>

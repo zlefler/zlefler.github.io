@@ -28,7 +28,7 @@ const Skills = () => {
     },
     {
       name: "AWS",
-      class: "teenyicons:amazonwebservices-solid",
+      class: "devicon-plain:amazonwebservices-wordmark",
     },
   ];
 
